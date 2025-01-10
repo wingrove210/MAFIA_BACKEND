@@ -8,3 +8,5 @@ class Billboard(Base):
     name = Column(String, index=True, nullable=False)
     description = Column(String, nullable=True)
     image = Column(String, nullable=True)
+    text_color = Column(String, nullable=True)
+    background_color = Column(String, nullable=True)

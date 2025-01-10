@@ -5,6 +5,8 @@ class BillboardBase(BaseModel):
     name: str
     description: Optional[str] = None
     image: Optional[str] = None
+    text_color: Optional[str] = None
+    background_color: Optional[str] = None
 
 class BillboardCreate(BillboardBase):
     pass
@@ -12,7 +14,9 @@ class BillboardCreate(BillboardBase):
 class BillboardUpdate(BillboardBase):
     name: Optional[str] = None
     price: Optional[float] = None
-    stock: Optional[int] = None
+    image: Optional[str] = None
+    text_color: Optional[str] = None
+    background_color: Optional[str] = None
 
 class BillboardResponse(BillboardBase):
     id: int
